@@ -1,33 +1,29 @@
 {
   "name": "dz_infrastructure",
   "version": "1.0.0",
-  "description": "A sample Node.js app using Express 4",
-  "engines": {
-    "node": "5.9.1"
+  "description": "Приложение для списка покупок",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
   },
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "eslint ."
+    "start": "node server.js",
+    "test": "eslint . & mocha"
   },
   "dependencies": {
-    "cool-ascii-faces": "1.3.4",
-    "ejs": "2.4.1",
-    "express": "4.13.3"
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "^3.0.1",
-    "nodemon": "^1.9.2"
+    "mocha": "^3.0.2"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Solechko/dz_infrastructure"
   },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
   "author": "Yana Bernikova <yana.b617@yandex.ru>",
   "license": "MIT"
 }
