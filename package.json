@@ -1,27 +1,33 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.2.5",
+  "name": "dz_infrastructure",
+  "version": "1.0.0",
   "description": "A sample Node.js app using Express 4",
   "engines": {
     "node": "5.9.1"
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "eslint ."
   },
   "dependencies": {
     "cool-ascii-faces": "1.3.4",
     "ejs": "2.4.1",
     "express": "4.13.3"
   },
+  "devDependencies": {
+    "eslint": "^3.0.1",
+    "nodemon": "^1.9.2"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "git+https://github.com/Solechko/dz_infrastructure"
   },
   "keywords": [
     "node",
     "heroku",
     "express"
   ],
+  "author": "Yana Bernikova <yana.b617@yandex.ru>",
   "license": "MIT"
 }
