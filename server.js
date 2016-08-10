@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var shopList = require('./shop-list');
-shopList.initProductList(5);
+shopList.initProductList(3);
 
 app.set('port', (process.env.PORT || 3000));
 app.set('views', './views');
@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
-  extended: true
+	extended: true
 }));
 
 app.get('/', function (req, res) {

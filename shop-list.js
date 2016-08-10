@@ -21,7 +21,7 @@ function shopList () {
 		for (var i = 0 ; i < count; i++) {			
 			var product = {
 				id: id++,
-				productName: 'Продукт ' + i
+				productName: 'Продукт ' + (i + 1)
 			};
 			products.push(product);
 		}
