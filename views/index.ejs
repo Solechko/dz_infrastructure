@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Список покупок</title>
-        <meta charset="utf8">
-        <link rel="stylesheet" href="/styles.css">
-    </head>
-    <body class="page">
-        <h1>Покупки</h1>
-        <form action="add" method="post">
-        	<input type="text" name="product">
-        	<input type="submit" value="Добавить">
-        </form>
-        <form action="reset" method="post">            
-            <input type="submit" value="Очистить">
-        </form>
-        <% for(var i=0; i<products.length; i++) {%>           
-        <form action="delete" method="post">
-            <input type="hidden" name="id" value="<%= products[i].id %>" >
-            <p><%= products[i].productName %></p>
-            <input type="submit" value="Удалить">
-        </form>
-        <% } %>
-    </body>
+	<head>
+		<title>Список покупок</title>
+		<meta charset="utf8">
+		<link rel="stylesheet" href="/styles.css">
+	</head>
+	<body class="page">
+		<div class="page-content">
+			<h1 class="header">Покупки</h1>
+			<form class="product-form" action="add" method="post">
+				<input class="product-name" type="text" name="product">
+				<input class="product-btn" type="submit" value="Добавить">
+			</form>
+			<% for(var i=0; i<products.length; i++) {%>           
+			<form class="product-form" action="delete" method="post">
+				<input type="hidden" name="id" value="<%= products[i].id %>" >
+				<p class="product-name"><%= products[i].productName %></p>
+				<input class="product-btn" type="submit" value="Удалить">
+			</form>
+			<% } %>
+			<form action="reset" method="post">            
+				<input class="product-btn product-btn-reset" type="submit" value="Очистить">
+			</form>
+		</div>
+	</body>
 </html>

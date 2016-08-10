@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+
+.page-content {
+	width: 600px;
+	margin: 60px auto;
+}
+
+.product-name {
+	width: 400px;
+	margin: 10px 0;
+	font-size: 20px;
+}
+
+.product-form input,
+.product-form p {
+	display: inline-block;
+}
+
+.product-btn {
+	width: 120px;
+	font-size: 20px;
+}
+
+.product-btn-reset {
+	margin-left: 404px;
+	margin-top: 10px;
+}
