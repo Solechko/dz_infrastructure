@@ -2,13 +2,13 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var shopList = require('./shop-list');
-shopList.initProductList(2);
+shopList.initProductList(5);
 
+app.set('port', (process.env.PORT || 3000));
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/public'));
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
@@ -41,7 +41,7 @@ app.post('/reset', function(req, res) {
 	console.timeEnd('reset');
 });
 
-app.listen(3000, function () {
-	console.log('Shoplist app listening on port 3000!');
+app.listen(app.get('port'), function () {
+	console.log('Shoplist app listening on port ', app.get('port'));
 });
 
