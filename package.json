@@ -1,29 +1,29 @@
 {
-  "name": "dz_infrastructure",
-  "version": "1.0.0",
-  "description": "Приложение для списка покупок",
-  "main": "server.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "test": "eslint . & mocha"
-  },
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "ejs": "^2.5.1",
-    "express": "^4.14.0"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "eslint": "^3.0.1",
-    "mocha": "^3.0.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Solechko/dz_infrastructure"
-  },
-  "author": "Yana Bernikova <yana.b617@yandex.ru>",
-  "license": "MIT"
+	"name": "dz_infrastructure",
+	"version": "1.0.0",
+	"description": "Приложение для списка покупок",
+	"main": "server.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"start": "node server.js",
+		"test": "eslint . && mocha"
+	},
+	"dependencies": {
+		"body-parser": "^1.15.2",
+		"ejs": "^2.5.1",
+		"express": "^4.14.0"
+	},
+	"devDependencies": {
+		"chai": "^3.5.0",
+		"eslint": "^3.0.1",
+		"mocha": "^3.0.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Solechko/dz_infrastructure"
+	},
+	"author": "Yana Bernikova <yana.b617@yandex.ru>",
+	"license": "MIT"
 }
