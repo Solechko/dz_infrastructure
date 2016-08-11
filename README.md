@@ -37,7 +37,7 @@ ESLint Был установлен командой: npm i -g eslint --save-dev
 
 Результаты выполнения линтера и юнет-тестов представлены ниже:
 
-![03](https://cloud.githubusercontent.com/assets/18663439/17575559/e781d5ac-5f72-11e6-933f-15e3db044de9.png)
+![02](https://cloud.githubusercontent.com/assets/18663439/17575550/ca2dacb0-5f72-11e6-9733-e91afd00f55f.png)
 
 ### Настройка Heroku
 
@@ -96,4 +96,4 @@ https://travis-ci.org/Solechko/dz_infrastructure
 
 ![08](https://cloud.githubusercontent.com/assets/18663439/17576133/380a38d4-5f78-11e6-8eb9-5c2852f193d9.png)
 
-На ней можно увидеть статистику аптайма сервера, а так же время простоя.
+На ней видна статистика аптайма сервера, а так же время простоя.
